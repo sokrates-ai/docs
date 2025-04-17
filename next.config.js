@@ -1,12 +1,12 @@
 const nextConfig = {
   reactStrictMode: true,
-  // distDir: 'dist',
+  distDir: 'dist',
   // Export output
-  // output: "export",
-  // images: {
-  //     unoptimized: true
-  // },
-  // basePath: '/docs',
+  output: "export",
+  images: {
+      unoptimized: true
+  },
+  basePath: '/docs',
 }
 
 const withNextra = require('nextra')({
