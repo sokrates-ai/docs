@@ -1,0 +1,157 @@
+import { Callout } from "nextra-theme-docs";
+import Image from "next/image";
+
+#  Frontend Overview
+## How to edit the Frontend of the Sokrates Platform 
+This Documentatione explains the structure of the Frontend of the Sokrates Platform and where to find the relevant code to make changes in The UI.
+The Importand Folders For the Frontend are The apps/web/app and the apps/web/components folder:
+- **apps/web/app**: This folder contains the main application code, including the Main pages, layouts, and global styles.
+- **apps/web/components**: This folder contains reusable UI components like Buttons used throughout the application, as well as specific subpages grouped by components.  
+
+ Where to find:
+<img style={{ borderRadius: 10 }} quality={100} src="/img/frontend/PicturesForDocs/Pagesimgs/Wheretofind.png"/>
+## Frontend Architecture Overview 
+
+inside The apps/web/app/orgs folder you will find 2 relevant folders:
+    -  **withmenu**: This folder Contains the general Dasboard(Courses) aswell as the course intoduction page.
+    -  **dash**: In this folder you will find the rest of the relevant pages which will be listed .
+
+wWhere to find:
+<img style={{ borderRadius: 10 }} quality={100} src="/img/frontend/PicturesForDocs/Pagesimgs/withmenu_dash.png"/>
+
+### pages inside the withmenu folder:
+    #### Courses: 
+    Formerly knowns as the Dasboard the Courses page is the Anker point of the Sokrates Platform. Here the user can see all the courses he is enrolled in, Admins can also create new courses from this page.
+<img style={{ borderRadius: 10 }} quality={100} src="/img/frontend/PicturesForDocs/Pagesimgs/Dashboard(Withmenu2)/dashboardwmenu.png"/>
+
+<details>
+<summary>Where to find:</summary>
+<img style={{ borderRadius: 10 }} quality={100} src="/img/frontend/PicturesForDocs/Pagesimgs/Dashboard(Withmenu2)/dashboardwmenu2.png"/>
+
+</details>
+    #### Course Introduction Page: 
+    This page is the introduction page of a course. Here users can see an overview of the course, as well as enroll in the course if they are not already enrolled.
+<img style={{ borderRadius: 10 }} quality={100} src="/img/frontend/PicturesForDocs/Pagesimgs/Course intro view(Withmenu)/courseintro2.png"/>
+<details>
+<summary>Where to find</summary>
+<img style={{ borderRadius: 10 }} quality={100} src="/img/frontend/PicturesForDocs/Pagesimgs/Course intro view(Withmenu)/courseintro.png"/>
+</details>
+
+### pages inside the dash folder: 
+    #### Users: 
+    This page allows Admins to manage users within the organization. Admins can view user details, assign roles, and manage user access to courses.
+<img style={{ borderRadius: 10 }} quality={100} src="/img/frontend/PicturesForDocs/Pagesimgs/Users/Users2.png"/>
+<details>
+<summary>Where to find</summary>
+<img style={{ borderRadius: 10 }} quality={100} src="/img/frontend/PicturesForDocs/Pagesimgs/Users/users.png"/>
+</details>
+ The Users Page is separated into 4 Subpages which you can see above.
+
+<details>
+<summary>Where to find the subpages</summary>
+<img style={{ borderRadius: 10 }} quality={100} src="/img/frontend/PicturesForDocs/Pagesimgs/Users/Subpages/Userssubpage.png"/>
+</details>
+
+    #### User Account Settings: 
+    This page allows users to manage their account settings, including updating personal information, changing passwords or Profile picture.
+<img style={{ borderRadius: 10 }} quality={100} src="/img/frontend/PicturesForDocs/Pagesimgs/UserAccountGeneral_Settings/Accountsettings2.png"/>
+<details>
+<summary>Where to find</summary>
+<img style={{ borderRadius: 10 }} quality={100} src="/img/frontend/PicturesForDocs/Pagesimgs/UserAccountGeneral_Settings/Accountsetting.png"/>   
+</details>
+The User Account Settings Page is separated into 2 Subpages consisting of General and Password Settings.
+<details>
+<summary>Where to find the subpages</summary>
+<img style={{ borderRadius: 10 }} quality={100} src="/img/frontend/PicturesForDocs/Pagesimgs/UserAccountGeneral_Settings/Subpages/AccountSettingsSubpages.png"/>
+</details>
+
+    #### Organization General Settings:
+    This page allows Admins to manage general organization settings, including updating organization information.
+<img style={{ borderRadius: 10 }} quality={100} src="/img/frontend/PicturesForDocs/Pagesimgs/OrganisationGeneral/Organisational2.png"/>
+<details>
+<summary>Where to find</summary>
+<img style={{ borderRadius: 10 }} quality={100} src="/img/frontend/PicturesForDocs/Pagesimgs/OrganisationGeneral/Organisational.png"/>
+</details>  
+The Organization General Settings Page contend is mostly on one Subpage
+<details>
+<summary>Where to find the subpage</summary>
+<img style={{ borderRadius: 10 }} quality={100} src="/img/frontend/PicturesForDocs/Pagesimgs/OrganisationGeneral/subpage/Organisationalsubpages.png"/>
+</details>  
+
+    #### Exercise Library:
+    This page allows Admins to manage the exercise library, including adding, editing, and deleting exercises. Users can also browse and search for exercises to include in their courses.
+<img style={{ borderRadius: 10 }} quality={100} src="/img/frontend/PicturesForDocs/Pagesimgs/Exercise Library/Exerciselibrary2.png"/>
+<details>
+<summary>Where to find</summary>
+<img style={{ borderRadius: 10 }} quality={100} src="/img/frontend/PicturesForDocs/Pagesimgs/Exercise Library/Exerciselibrary.png"/>
+</details>  
+
+    #### Course edit page:
+    This page allows Admins and Instructors to create and edit courses, including adding course details, managing course content like the Exercises or creating the map, setting course setting, and offers an overview of the members enrolled in the course.
+<img style={{ borderRadius: 10 }} quality={100} src="/img/frontend/PicturesForDocs/Pagesimgs/Course Edit Page/courseeditpage2.png"/>
+<details>
+<summary>Where to find</summary>
+<img style={{ borderRadius: 10 }} quality={100} src="/img/frontend/PicturesForDocs/Pagesimgs/Course Edit Page/courseaditpage.png"/>
+</details>  
+The Course Edit Page is separated into 5 Subpages which you can see above.
+<details>
+<summary>Where to find the subpages</summary>
+<img style={{ borderRadius: 10 }} quality={100} src="/img/frontend/PicturesForDocs/Pagesimgs/Course Edit Page/Subpages!/courseeditsuppages.png"/>
+</details>
+
+### Components
+
+The reusable components used throughout the Sokrates Platform can be found in the apps/web/components folder.
+
+#### UI Components
+In this folder you will find all the reusable UI components from th shadcn/UI library, All the components are are stlyed according to the Sokrates Platform Design which can be found on the figma board.
+New Components should always be implemented using the unifomly designed shadcn UI components as a base.
+
+-**Specific Components**
+Some of the components include Buttons, Modals, Forms, and Navigation elements. These components are designed to be flexible and can be easily integrated into different parts of the application.
+
+-**Buttons**:
+<img style={{ borderRadius: 10 }} quality={100} src="/img/frontend/PicturesForDocs/Components/Assets_UI/Examples/Buttondefault.png"/> 
+
+-**Badges**:
+<img style={{ borderRadius: 10 }} quality={100} src="/img/frontend/PicturesForDocs/Components/Assets_UI/Examples/BadgeDefault.png"/>
+
+-**Card**;
+<img style={{ borderRadius: 10 }} quality={100} src="/img/frontend/PicturesForDocs/Components/Assets_UI/Examples/CardDefault.png"/>
+<details>
+<summary>Where to find:</summary>
+<img style={{ borderRadius: 10 }} quality={100} src="/img/frontend/PicturesForDocs/Components/Assets_UI/UIAssets.png"/>
+</details>
+
+#### Menu Bar 
+The Menu Bar component is a crucial part of the Sokrates Platform's user interface, providing easy navigation across different sections of the application. It is designed to be responsive and user-friendly, ensuring that users can quickly access the features they need.
+
+<img style={{ borderRadius: 10 }} quality={100} src="/img/frontend/PicturesForDocs/Components/MenuBar/MenuBar1.png"/>
+
+for easy access the Menu Bar navigation can be expanded and collapsed by clicking on the profile picture.
+<img style={{ borderRadius: 10 }} quality={100} src="/img/frontend/PicturesForDocs/Components/MenuBar/menubaraufgeklappt.png"/>   
+
+<details>
+<summary> Where to find: </summary>
+<img style={{ borderRadius: 10 }} quality={100} src="/img/frontend/PicturesForDocs/Components/MenuBar/MenuBar2.png"/>  
+</details>
+
+#### Modals
+Modals are used throughout the Sokrates Platform to display important information, confirm actions, or gather user input without navigating away from the current page. Essentially every time a popup appears on the screen, it is most likely a modal.
+<img style={{ borderRadius: 10 }} quality={100} src="/img/frontend/PicturesForDocs/Components/Modals_popups/Examples/Modals.png"/>
+<details>
+<summary>Where to find:</summary>
+<img style={{ borderRadius: 10 }} quality={100} src="/img/frontend/PicturesForDocs/Components/Modals_popups/Modals.png"/>
+</details>
+
+#### Styled elements
+Stlyed Elements are the old UI elements used by the learnhouse platform and should not be implemented in new features. There are still some parts of the Sokrates Platform using these styled elements, because there has not been a good way to replace them with the new shadcn/UI components yet.
+
+  -**Course Card**:
+one example of a styled element is the Course Card used on the Dashboard page.
+
+
+<details>
+<summary>Where to find:</summary>
+<img style={{ borderRadius: 10 }} quality={100} src="/img/frontend/PicturesForDocs/Components/Styled Elements/StyledElements.png"/>
+</details>  
